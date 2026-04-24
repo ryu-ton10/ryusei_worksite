@@ -1,0 +1,38 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+
+    .home__title {
+        padding-left: 30px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #333;
+    }
+
+    .home__menu {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: #272341;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #c22729;
+            }
+        }
+    }
+}
