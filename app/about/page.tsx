@@ -9,7 +9,15 @@ export default function About() {
     <div className="about">
       <h1>About</h1>
       <div className="about__profile">
-        <Image src={profileImage} alt="Profile Image" className="about__profile-image" />
+        <div className="about__profile-image-container">
+          <Image
+            src={profileImage}
+            alt="Profile Image"
+            className="about__profile-image"
+            fill
+            style={{ objectFit: 'contain' }}
+          />
+        </div>
         <div className="about__profile-details">
           <p className="about__profile-name">Ryusei Nomi</p>
           <p className="about__profile-title">Web Developer</p>
