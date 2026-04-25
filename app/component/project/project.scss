@@ -5,32 +5,36 @@
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
-  }
 
-  .portfolio__project-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    h2 {
-      font-size: 1.5rem;
-      color: #333;
-      padding-bottom: 10px;
-      font-weight: bold;
+    .portfolio__project-image-container {
+      opacity: 0;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      margin: 20px 0;
+      @include mixins.animation(fade-in-from-left, 1.5s, 0.5s);
     }
 
-    p {
-      font-size: 1rem;
-      color: #333;
-    }
-  }
+    .portfolio__project-title {
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include mixins.animation(fade-in-from-right, 1.5s, 1s);
 
-  .portfolio__project-image-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    margin: 20px 0;
+      h2 {
+        font-size: 1.5rem;
+        color: #333;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
   }
 }
 
@@ -39,25 +43,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 20px;
-  }
 
-  .portfolio__project-title {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-
-    h2 {
-      font-size: 1.5rem;
-      color: #333;
-      padding-bottom: 20px;
-      font-weight: bold;
+    .portfolio__project-image-container {
+      opacity: 0;
+      position: relative;
+      width: 100%;
+      height: 500px;
+      @include mixins.animation(fade-in-from-left, 1.5s, 0.5s);
     }
-  }
 
-  .portfolio__project-image-container {
-    position: relative;
-    width: 100%;
-    height: 500px;
+    .portfolio__project-title {
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      @include mixins.animation(fade-in-from-right, 1.5s, 1s);
+
+      h2 {
+        font-size: 1.5rem;
+        color: #333;
+        padding-bottom: 20px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
   }
 }
