@@ -1,6 +1,7 @@
 import './page.scss';
 import { Project } from '../component/project/project';
 import { Header } from "../component/header/header";
+import { Footer } from "../component/footer/footer";
 import barMomo from "../../public/bar_momo.png";
 import pokemonTribeRateSearcher from "../../public/pokemon_tribe_rate_searcher.png";
 import makaseteChoice from "../../public/makasete_choice.png";
@@ -32,6 +33,7 @@ export default function Portfolio() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

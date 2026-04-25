@@ -1,5 +1,6 @@
 import './page.scss';
 import { Header } from "../component/header/header";
+import { Footer } from "../component/footer/footer";
 
 export default function Contact() {
   return (
@@ -12,6 +13,7 @@ export default function Contact() {
           <a href="mailto:ryusakine0507@gmail.com">ryusakine0507@gmail.com</a>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

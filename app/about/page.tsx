@@ -1,6 +1,7 @@
 import './page.scss';
 import Image from "next/image";
 import { Header } from "../component/header/header";
+import { Footer } from "../component/footer/footer";
 import profileImage from "../../public/profile_picture.jpg";
 import xLogo from "../../public/x_logo.png";
 import githubLogo from "../../public/github_logo.png";
@@ -56,6 +57,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import { Project } from '../component/project/project';
 import { Header } from "../component/header/header";
+import { Footer } from "../component/footer/footer";
 import hokurikucar from "../../public/hokurikucar.png";
 import './page.scss';
 
@@ -18,6 +19,7 @@ export default function Works() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

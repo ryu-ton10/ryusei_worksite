@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color: #333;
 
     .header__nav {
       display: none;
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: #333;
 
     a {
       display: flex;
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color: #333;
 
     .header__nav {
       display: flex;
