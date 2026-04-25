@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './header.scss';
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
@@ -15,18 +14,22 @@ export function Header() {
           <a href="/works">Works</a> 
           <a href="/contact">Contact</a> 
         </nav>
-        <div className="header__hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <input type="checkbox" id="menu-toggle" hidden />
+        <label className="header__hamburger" htmlFor="menu-toggle">
           <span></span>
           <span></span>
           <span></span>
+        </label>
+
+        <div className="header__overlay"></div>
+
+        <div className="header__mobile-menu">
+          <a href="/about">About</a>
+          <a href="/portfolio">Portfolio</a>
+          <a href="/works">Works</a> 
+          <a href="/contact">Contact</a> 
         </div>
       </header>
-      <div className="header__mobile-menu" style={{ display: isMenuOpen ? 'block' : 'none' }}>
-        <a href="/about">About</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/works">Works</a> 
-        <a href="/contact">Contact</a> 
-      </div>
     </>
   );
 }
