@@ -1,0 +1,33 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  align-items: center;
+  padding: 0 150px;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      font-size: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #c22729;
+      } 
+    }
+  }
+}
