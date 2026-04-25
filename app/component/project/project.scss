@@ -1,0 +1,63 @@
+@use './../../mixins';
+
+@include mixins.mq(sp) {
+  .portfolio__project {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .portfolio__project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+
+  .portfolio__project-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+  }
+}
+
+@include mixins.mq(pc) {
+  .portfolio__project {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .portfolio__project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .portfolio__project-image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+}

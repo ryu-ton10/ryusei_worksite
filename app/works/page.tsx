@@ -1,4 +1,4 @@
-import { Project } from '../component/project';
+import { Project } from '../component/project/project';
 import hokurikucar from "../../public/hokurikucar.png";
 import './page.scss';
 

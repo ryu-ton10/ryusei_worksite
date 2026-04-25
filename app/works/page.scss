@@ -1,21 +1,46 @@
-.works {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  align-items: center;
-  padding: 0 150px;
+@use './../mixins';
 
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 4rem;
+@include mixins.mq(sp) {
+  .works {
+    height: 100vh;
     width: 100%;
-  }
-
-  .works__portfolio {
     display: flex;
     flex-direction: column;
 
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      width: 100%;
+    }
+
+    .works__portfolio {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@include mixins.mq(pc) {
+  .works {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    padding: 0 150px;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 4rem;
+      width: 100%;
+    }
+
+    .works__portfolio {
+      display: flex;
+      flex-direction: column;
+
+    }
   }
 }

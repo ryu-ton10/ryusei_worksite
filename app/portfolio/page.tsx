@@ -1,5 +1,5 @@
 import './page.scss';
-import { Project } from '../component/project';
+import { Project } from '../component/project/project';
 import barMomo from "../../public/bar_momo.png";
 import pokemonTribeRateSearcher from "../../public/pokemon_tribe_rate_searcher.png";
 import makaseteChoice from "../../public/makasete_choice.png";

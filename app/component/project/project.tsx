@@ -19,10 +19,6 @@ export function Project(
 ) {
   return (
     <div className="portfolio__project">
-      <div className="portfolio__project-title">
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
       <div className="portfolio__project-image-container">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <Image
@@ -33,6 +29,10 @@ export function Project(
             style={{ objectFit: 'contain' }}
           />
         </a>
+      </div>
+      <div className="portfolio__project-title">
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
     </div>
   )

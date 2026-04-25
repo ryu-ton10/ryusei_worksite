@@ -1,4 +1,50 @@
-.home {
+@use './mixins';
+
+@include mixins.mq(sp) {
+  .home {
+    height: 100vh;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .home__title {
+      padding-bottom: 30px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+    
+    .home__menu {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    
+      a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #272341;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+    
+      a[target="_blank"]::after {
+        content: " ↗"; /* シンプルに矢印を追加 */
+      }
+    }
+  }
+}
+
+@include mixins.mq(pc) {
+  .home {
     height: 100vh;
     width: 100%;
     padding: 0 100px;
@@ -39,4 +85,5 @@
         content: " ↗"; /* シンプルに矢印を追加 */
       }
     }
+  }
 }

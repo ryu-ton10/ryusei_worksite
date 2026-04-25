@@ -1,33 +1,79 @@
-.contact {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  align-items: center;
-  padding: 0 150px;
 
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 4rem;
+@use './../mixins';
+
+@include mixins.mq(sp) {
+  .contact {
+    height: 100vh;
     width: 100%;
-  }
-
-  .contact__content {
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
 
-    a {
-      font-size: 1.5rem;
-      color: #333;
-      text-decoration: none;
-      transition: color 0.3s;
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      width: 100%;
+      padding-bottom: 50px;
+    }
 
-      &:hover {
-        color: #c22729;
-      } 
+    .contact__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      p {
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+      }
+
+      a {
+        font-size: 1.5rem;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+    }
+  }
+}
+
+@include mixins.mq(pc) {
+  .contact {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    padding: 0 150px;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 4rem;
+      width: 100%;
+    }
+
+    .contact__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        font-size: 1.5rem;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #c22729;
+        } 
+      }
     }
   }
 }
