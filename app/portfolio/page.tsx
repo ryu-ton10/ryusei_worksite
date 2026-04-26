@@ -3,6 +3,8 @@ import { Project } from '../component/project/project';
 import { Header } from "../component/header/header";
 import { Footer } from "../component/footer/footer";
 import barMomo from "../../public/bar_momo.png";
+import kokon from "../../public/kokon_website.png";
+import kayanoau from "../../public/kayanoau_website.png";
 import pokemonTribeRateSearcher from "../../public/pokemon_tribe_rate_searcher.png";
 import makaseteChoice from "../../public/makasete_choice.png";
 
@@ -18,6 +20,18 @@ export default function Portfolio() {
             description="墨田区押上にあるバーのオフィシャルサイトです。店舗の情報を掲載しており、レスポンシブデザインでスマートフォンやタブレットでも快適に閲覧できます。"
             imageSrc={barMomo}
             link="https://whisky-bar-momo.com/"
+          />
+          <Project
+            title="ここんのかくれが"
+            description="バーチャル YouTuber 杞憂火狐今さんのファンサイトです。彼のビジュアルや配信スケジュールなどを確認することが出来ます。また、過去のコラボ配信のアーカイブも掲載されております。"
+            imageSrc={kokon}
+            link="https://kiyubi-kokon.netlify.app/"
+          />
+          <Project
+            title="KayanoAU 公式サイト"
+            description="インターネットで活動している KayanoA と茅野ユウのオフィシャルサイトです。主な活動内容の紹介や、グッズや LINE スタンプの販売ページにもアクセスすることが出来ます。また、彼らの Twitter や YouTube チャンネルへのリンクも掲載されております。"
+            imageSrc={kayanoau}
+            link="https://kayanoau.netlify.app/"
           />
           <Project
             title="ポケモン種族値サーチ"
