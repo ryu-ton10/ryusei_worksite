@@ -2,7 +2,7 @@ import './page.scss';
 import { Project } from '../component/project/project';
 import { Header } from "../component/header/header";
 import { Footer } from "../component/footer/footer";
-import barMomo from "../../public/bar_momo.png";
+import si14 from "../../public/si14_website.png";
 import kokon from "../../public/kokon_website.png";
 import kayanoau from "../../public/kayanoau_website.png";
 import pokemonTribeRateSearcher from "../../public/pokemon_tribe_rate_searcher.png";
@@ -16,10 +16,10 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
         <div className="portfolio__projects">
           <Project
-            title="WHISKY BAR MOMO"
-            description="墨田区押上にあるバーのオフィシャルサイトです。店舗の情報を掲載しており、レスポンシブデザインでスマートフォンやタブレットでも快適に閲覧できます。"
-            imageSrc={barMomo}
-            link="https://whisky-bar-momo.com/"
+            title="写真サークル 珪素光画"
+            description="日常の風景を写真に収めることを目的としたサークル「珪素光画」の公式サイトです。サークルの活動内容やメンバーの紹介、撮影した写真のギャラリーなどを掲載しています。また、サークルへの参加方法やお問い合わせ先も記載されております。"
+            imageSrc={si14}
+            link="https://keiso-kouga.netlify.app/"
           />
           <Project
             title="ここんのかくれが"
