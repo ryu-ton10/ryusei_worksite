@@ -4,7 +4,7 @@
   .home {
     height: 100vh;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,20 +13,31 @@
     .home__title {
       padding-bottom: 30px;
       @include mixins.animation(fade-in-from-left, 1s);
+
+      h1:nth-child(1) {
+        color: #c22729;
+        font-weight: bold;
+      }
+    
+      h1:nth-child(2) {
+        color: #272341;
+        font-weight: bold;
+      }
     }
   
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #333;
     }
-    
+
     .home__menu {
       width: 100%;
       margin-top: 20px;
+      padding: 0 50px;
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 20px;
+      gap: 30px;
     
       a {
         opacity: 0;
@@ -34,7 +45,7 @@
         justify-content: center;
         text-decoration: none;
         color: #272341;
-        font-size: 1rem;
+        font-size: 1.5rem;
         transition: color 0.3s;
       }
 
