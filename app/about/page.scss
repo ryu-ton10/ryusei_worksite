@@ -70,6 +70,16 @@
           font-size: 1rem;
           color: #333;
         }
+
+        .about__profile-resume {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 70px;
+          font-size: 1.25rem;
+          color: #333;
+          border: #333 solid 1px;
+        }
       }
     }
   }
@@ -144,6 +154,22 @@
         .about__profile-bio {
           font-size: 1rem;
           color: #333;
+        }
+
+        .about__profile-resume {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 100px;
+          font-size: 1.25rem;
+          color: #333;
+          border: #333 solid 1px;
+
+          &:hover {
+            background-color: #333;
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+          }
         }
       }
     }

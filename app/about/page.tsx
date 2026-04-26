@@ -54,7 +54,7 @@ export default function About() {
               新卒で事業会社に入社し、3年弱ほど少人数チームでQAやAPI設計実装を行っていました。<br></br>
               2020年9月からは個人事業主として仕事を受けています。
             </p>
-            <a href="https://www.resume.id/27ma4_tonto" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a className="about__profile-resume" href="https://www.resume.id/27ma4_tonto" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
