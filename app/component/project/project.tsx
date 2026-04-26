@@ -26,7 +26,10 @@ export function Project(
             src={imageSrc}
             alt={title}
             className="portfolio__project-image"
-            style={{ objectFit: 'contain' }}
+            style={{
+              objectFit: 'contain',
+              filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.5))'
+            }}
           />
         </a>
       </div>
