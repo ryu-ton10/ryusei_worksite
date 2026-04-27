@@ -50,9 +50,9 @@ export default function About() {
               </div>
             </div>
             <p className="about__profile-bio">
-              金沢市でエンジニアをやっております。主にWebアプリのバックエンドやモバイルアプリを触っています。<br></br>
-              新卒で事業会社に入社し、3年弱ほど少人数チームでQAやAPI設計実装を行っていました。<br></br>
-              2020年9月からは個人事業主として仕事を受けています。
+              金沢市でエンジニアをやっております。主にWebアプリのフロントエンド周りを触っています。
+              ホームページ制作などが得意で、店舗のホームページ制作や、個人のポートフォリオサイトなども制作してきました。
+              また、YouTubeやSpotifyなどで技術系のコンテンツも発信しています。<br></br>
             </p>
             <a className="about__profile-resume" href="https://www.resume.id/27ma4_tonto" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
