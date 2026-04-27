@@ -80,6 +80,16 @@
     .home__title {
       padding-left: 30px;
       @include mixins.animation(fade-in-from-left, 1.5s);
+
+      h1:nth-child(1) {
+        color: #c22729;
+        font-weight: bold;
+      }
+    
+      h1:nth-child(2) {
+        color: #272341;
+        font-weight: bold;
+      }
     }
 
     h1 {
