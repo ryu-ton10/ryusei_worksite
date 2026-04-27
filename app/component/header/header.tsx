@@ -1,13 +1,21 @@
 'use client';
 import { useState } from 'react';
 import './header.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 export function Header() {
 
   return (
     <>
       <header className="header">
-        <a href="/">Home</a>
+        <a href="/">
+          <FontAwesomeIcon
+            icon={faHouse}
+            size="2x"
+            style={{ color: 'white', height: '100%' }}
+          />
+        </a>
         <nav className="header__nav">
           <a href="/about">About</a>
           <a href="/portfolio">Portfolio</a>
