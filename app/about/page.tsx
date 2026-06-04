@@ -27,7 +27,7 @@ export default function About() {
             <p className="about__profile-title">Web Developer</p>
             <div className="about__profile-social">
               <div className="about__profile-social-x">
-                <a href="https://x.com/skn_ton10_v1" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/ryusei_nomi" target="_blank" rel="noopener noreferrer">
                   <Image
                     fill
                     src={xLogo}
@@ -50,11 +50,9 @@ export default function About() {
               </div>
             </div>
             <p className="about__profile-bio">
-              金沢市でエンジニアをやっております。主にWebアプリのフロントエンド周りを触っています。
-              ホームページ制作などが得意で、店舗のホームページ制作や、個人のポートフォリオサイトなども制作してきました。
-              また、YouTubeやSpotifyなどで技術系のコンテンツも発信しています。<br></br>
+              Web developer at HeartLanguage Inc. <br />
             </p>
-            <a className="about__profile-resume" href="https://www.resume.id/27ma4_tonto" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a className="about__profile-resume" href="https://www.resume.id/27/ryusei_nomi" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
