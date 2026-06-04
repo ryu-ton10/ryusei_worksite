@@ -52,7 +52,7 @@ export default function About() {
             <p className="about__profile-bio">
               Web developer at HeartLanguage Inc. <br />
             </p>
-            <a className="about__profile-resume" href="https://www.resume.id/27/ryusei_nomi" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a className="about__profile-resume" href="https://www.resume.id/ryusei_nomi" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
