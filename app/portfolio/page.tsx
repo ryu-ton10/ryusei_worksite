@@ -3,7 +3,6 @@ import { Project } from '../component/project/project';
 import { Header } from "../component/header/header";
 import { Footer } from "../component/footer/footer";
 import si14 from "../../public/si14_website.png";
-import kokon from "../../public/kokon_website.png";
 import kayanoau from "../../public/kayanoau_website.png";
 import pokemonTribeRateSearcher from "../../public/pokemon_tribe_rate_searcher.png";
 import makaseteChoice from "../../public/makasete_choice.png";
