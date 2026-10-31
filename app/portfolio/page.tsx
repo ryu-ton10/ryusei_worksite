@@ -22,12 +22,6 @@ export default function Portfolio() {
             link="https://keiso-kouga.netlify.app/"
           />
           <Project
-            title="ここんのかくれが"
-            description="バーチャル YouTuber 杞憂火狐今さんのファンサイトです。彼のビジュアルや配信スケジュールなどを確認することが出来ます。また、過去のコラボ配信のアーカイブも掲載されております。"
-            imageSrc={kokon}
-            link="https://kiyubi-kokon.netlify.app/"
-          />
-          <Project
             title="KayanoAU 公式サイト"
             description="インターネットで活動している KayanoA と茅野ユウのオフィシャルサイトです。主な活動内容の紹介や、グッズや LINE スタンプの販売ページにもアクセスすることが出来ます。また、彼らの Twitter や YouTube チャンネルへのリンクも掲載されております。"
             imageSrc={kayanoau}
